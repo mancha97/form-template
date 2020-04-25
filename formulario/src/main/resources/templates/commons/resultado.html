@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
+<body >
+
+	<h1 >Tu formulario presento los siguientes errores: </h1>
+	<br></br>
+	<table>
+		<tr th:each="c: ${error}">
+			<td th:text="${c}" />
+	</table>
+	
+
+
+
+<a href="http://localhost:8080/ingresar" class="btn btn-success">Volver a intentar</a>
+
+</body>
+</html>

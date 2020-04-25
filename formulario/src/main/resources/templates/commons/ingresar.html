@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body >
+
+	<h1 >Ingreso de nuevo alumno</h1>
+		<form method="post" th:action="@{/formulario}">
+			<p>Nombres:</p> <input id="nombre" type="text" placeholder="Ingrese sus nombres" name="nombre" />
+			
+			<p>Apellidos:</p> <input id="apellido" type="text" placeholder="Ingrese sus apellidos" name="apellido" />
+			
+			<p>Fecha de nacimiento:</p> <input id="fecha" type="date" name="fecha"  required/>
+			
+			<p>Lugar de nacimiento:</p> <input id="lugar" type="text" placeholder="Ingrese el lugar" name="lugar" />
+			
+			<p>Instituto o Colegio de procedencia:</p> <input id="cole" type="text" placeholder="Ingrese la institucion" name="cole" />
+			
+			<p>Telefono fijo:</p> <input id="tel" type="tel" placeholder="Ingrese tel. fijo" name="tel" pattern="\d*" />
+			
+			<p>Telefono movil:</p> <input id="movil" type="tel" placeholder="Ingrese su movil" name="movil" pattern="\d*"/>
+			
+			<br></br>
+			
+			<input type="submit" value="Guardar alumno"/>
+		</form>
+
+</body>
+</html>
